@@ -46,7 +46,7 @@ const Landing = () => {
         Application Process for Primary and High School <br/>Students</p>
 
         <div className=' flex items-center gap-3  '>
-            <button className='border bg-blue-950 text-white rounded-lg w-60 h-10 lg:text-xl text-xs'>Start Your Application</button>
+            <button className='border bg-blue-950 text-white rounded-lg w-60 h-10 lg:text-xl text-xs hover:bg-blue-300 hover:text-blue-900'>Start Your Application</button>
             <img src={cartoon1} alt='Logo' className='h-20 mb-0'/>
         </div>
     </div>
