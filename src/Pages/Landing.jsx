@@ -37,7 +37,7 @@ const Landing = () => {
             </div>
         </nav>
 
-<section className='mx-20 my-10 flex gap-10 lg:flex-row md:flex-row flex-col' >
+<section className='mx-20 my-10 flex gap-10 lg:flex-row md:flex-row flex-col mb-5' >
 
 <div>
     <div>
@@ -69,7 +69,7 @@ const Landing = () => {
 </section>
 
 
-<section className='mx-20 my-10 flex gap-8  lg:flex-row md:flex-row flex-col'>
+<section className='mx-20 my-10 lg:flex lg:gap-8  lg:flex-row md:flex-row flex flex-col gap-16'>
 
 
 <LandingCard logo={cartoon5} heading={'Streamline Your Application Process'} paragraph={'Our web app helps primary and high school students save time and energy by streamlining the application process for multiple schools. With our easy-to-use platform, you can complete and submit your applications quickly and efficiently'}/>
