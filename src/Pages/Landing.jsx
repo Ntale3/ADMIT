@@ -42,7 +42,7 @@ const Landing = () => {
 <div>
     <div>
         <h1 className='text-3xl tracking-wide text-[#223A59]'>APPLY TO YOUR <br/>DREAM SCHOOL<br/> WITH EASE</h1>
-        <p className='tracking-wide mt-4 text-[#333333]'>Our Web App Simplifies the O-level and A-level <br/>
+        <p className='tracking-wide mt-4 text-[#333333] lg:text-lg text-sm'>Our Web App Simplifies the O-level and A-level <br/>
         Application Process for Primary and High School <br/>Students</p>
 
         <div className=' flex items-center gap-3  '>
