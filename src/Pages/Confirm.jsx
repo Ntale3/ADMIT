@@ -11,12 +11,13 @@ import { MdOutlineCancel } from "react-icons/md";
 import { VscPass } from "react-icons/vsc";
 import FinalContent from '../components/FinalContent';
 import Button from '../components/Button';
+import {Link}from 'react-router-dom'
 import DataContext from '../contexts/DataContext';
 import FormContext from '../contexts/FormContext';
-import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 const Confirm = () => {
 const{isSelected,deleteSchool} =useContext(DataContext);
-const {handleSubmit2,updateFormData,formData}=useContext(FormContext)
+const {handleSubmit2,updateFormData,formData,errors,setErrors}=useContext(FormContext)
 
 const deleteSch=(data)=>{
   if(isSelected.includes(data)){
@@ -27,8 +28,27 @@ deleteSchool(data)
     return;
   }
 }
+// const validate = () => { 
+//   const errors = {};
+//   if(formData.selectedschool.length>5) errors.selectedschool='Selected schools should not exceed five(5)'
+//   return errors; 
+// };
+
+let navigate=useNavigate();
+const handleSubmit3 = (e) => {
+  e.preventDefault();
+  console.log(formData) 
+  navigate('/home')
+  
+ 
+
+} 
+
+
+
+
   return (
-    <form onSubmit={handleSubmit2}>
+    <form onSubmit={handleSubmit3}>
   <Logo/>
   <div className='text-center my-5 '>    
     <h2 className='text-blue-900 text-xl'>Application Review</h2>
@@ -45,7 +65,9 @@ deleteSchool(data)
       <div>
       <StepThreeContent/>
       </div>
-      <ConfirmDescr info={'Choice of Schools'} edit={'Edit'}/>
+      <ConfirmDescr info={'Choice of Schools'}
+      
+      edit={'Edit'} link={'/steps'}/>
       {/* <FinalContent schoolName={'Mengo Senior School'} bg={'border-red-500'} icon={<MdOutlineCancel size={20} className='text-red-500'/>}  paraColor={'text-red-500'}/> */}
       
       <div className=''>
@@ -61,12 +83,13 @@ deleteSchool(data)
 
           }
             
-          
-         
         </ul>
         </div>
         <div>
-       <Link to={'/home'}> <Button text={'Submit Application'} type='submit'/></Link>
+          {/* <Link to={'/home'} > */}
+          
+        <Button text={'Submit Application'} type='submit'/>
+        {/* </Link> */}
         </div>
 
     </div>

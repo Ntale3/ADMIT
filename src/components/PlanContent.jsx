@@ -15,22 +15,22 @@ const handleChange=(e)=>{
     <div>
         <p className={paradesign}><label htmlFor="ExpectedTerm">Expected College Term</label></p>
         <div className='w-full'>
-          <input type="month" name='expectedSchoolTerm' value={formData.expectedSchoolTerm} onChange={handleChange} className={inputDesign}/>
+          <input type="month" name='expectedSchoolTerm' value={formData.expectedSchoolTerm} onChange={handleChange} className={inputDesign} required/>
           {/* <input type="text" className={inputDesign}/> */}
         </div>
        <p className={paradesign}><label htmlFor="nextClass">Next Class Of Enrollment</label></p>
        <div>
-        <input type="text" id='nextClass' className={`${inputDesign} w-full`} name='nextClassOfEnrollment' value={formData.nextClassOfEnrollment} onChange={handleChange} />
+        <input type="text" id='nextClass' className={`${inputDesign} w-full`} name='nextClassOfEnrollment' value={formData.nextClassOfEnrollment} onChange={handleChange} required/>
        </div>
 
        <p className={paradesign}><label htmlFor="fieldOfStudy">Field of Study</label></p>
        <div>
-        <input type="text" id='fieldOfStudy'  name='fieldOfStudy'  value={formData.fieldOfStudy} onChange={handleChange} className={`${inputDesign} w-1/2`} />
+        <input type="text" id='fieldOfStudy'  name='fieldOfStudy'  value={formData.fieldOfStudy} onChange={handleChange} className={`${inputDesign} w-1/2`} required/>
        </div>
 
        <p className={paradesign}><label htmlFor="combination">Desired Combination</label></p>
        <div>
-        <input type="text" id='combination' name='desiredCombination' className={`${inputDesign} w-full`} value={formData.desiredCombination} onChange={handleChange} />
+        <input type="text" id='combination' name='desiredCombination' className={`${inputDesign} w-full`} value={formData.desiredCombination} onChange={handleChange} required/>
        </div>
     </div>
   )
