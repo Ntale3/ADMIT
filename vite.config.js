@@ -2,7 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: "/",
+export default defineConfig({  
   plugins: [react()],
+  base:"/dist/assets/index-NNUFHO3E.js"
+  
 })
