@@ -4,6 +4,7 @@ import PlanContent from '../components/PlanContent';
 
 const Plans = () => {
   
+  
   return (
     <div className='w-full'>
       <SteperTitle h2={'What are your plans for the next step?'}

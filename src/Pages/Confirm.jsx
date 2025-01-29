@@ -75,7 +75,8 @@ const handleSubmit3 = (e) => {
          {
           isSelected.map((data,index)=>{
             return <li key={index} onClick={()=>deleteSch(data)}>
-              <FinalContent schoolName={data.name} bg={data.status?'border-green-500':'border-red-500'} icon={data.status?<VscPass size={20}  className='text-green-500'/>:<MdOutlineCancel size={20} className='text-red-500'/>}  
+              <FinalContent schoolName={data.name} bg={data.status?'border-green-500':'border-red-500'} 
+              icon={data.status?<VscPass size={20}  className='text-green-500'/>:<MdOutlineCancel size={20} className='text-red-500'/>}  
                       paraColor={data.status?'text-green-500':'text-red-500'} para={data.status?'Admissions Accepted':'Admissions ended'}/>
             </li>
           })

@@ -40,6 +40,7 @@ const[formData,setFormData]=useState({
 //   }
 // },[])
 
+console.log(formData)
 
 
 
