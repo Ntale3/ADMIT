@@ -2,7 +2,7 @@ import Steps from './Pages/Steps'
 import Confirm from './Pages/Confirm'
 import FormContextProvider from './contexts/FormContextProvider'
 import DataContextProvider from './contexts/DataContextProvider'
-import { BrowserRouter, Routes,Route} from "react-router-dom";
+import { BrowserRouter,HashRouter, Routes,Route} from "react-router-dom";
 import Landing from "./Pages/Landing.jsx";
 import School from './Pages/School.jsx';
 import Payment from './Pages/Payment.jsx';
@@ -15,7 +15,8 @@ function App() {
   return (
 <FormContextProvider>
  <DataContextProvider>
-<BrowserRouter>
+{/* <BrowserRouter> */}
+<HashRouter>
 <Routes>
   <Route path='/home' element={<Home/>}/>
   <Route path='/confirm' element={<Confirm/>}/>
@@ -26,7 +27,8 @@ function App() {
   <Route path='/login' element={<Login/>}/>
 
 </Routes>
-</BrowserRouter>
+</HashRouter>
+{/* </BrowserRouter> */}
    
     
  </DataContextProvider>
