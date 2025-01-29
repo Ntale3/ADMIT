@@ -17,13 +17,13 @@ import FormContext from '../contexts/FormContext';
 import {useNavigate} from 'react-router-dom'
 const Confirm = () => {
 const{isSelected,deleteSchool} =useContext(DataContext);
-const {handleSubmit2,updateFormData,formData,errors,setErrors}=useContext(FormContext)
+ const {handleSubmit2,updateFormData,formData,errors,setErrors}=useContext(FormContext)
 
 const deleteSch=(data)=>{
   if(isSelected.includes(data)){
 deleteSchool(data)
 
-//console.log(isSelected)
+console.log(isSelected)
   }else{
     return;
   }
@@ -37,7 +37,7 @@ deleteSchool(data)
 let navigate=useNavigate();
 const handleSubmit3 = (e) => {
   e.preventDefault();
-  console.log(formData) 
+  //console.log(formData) 
   navigate('/home')
   
  
