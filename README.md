@@ -6,4 +6,6 @@
 3.cd Admit
 4.npm install (to get all the requirements used)
 5.npm run dev
+
+
  
