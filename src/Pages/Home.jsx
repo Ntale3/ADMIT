@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import DashBoard from '../components/DashBoard'
-import SideBar from '../components/sideBar'
+import { useState } from 'react'
+import SideBar from '../components/SideBar'
 import NavBar from '../components/NavBar'
 import Heading from '../components/Heading'
 import Widget from '../components/Widget'

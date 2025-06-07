@@ -2,7 +2,6 @@
 import Buttons from './Buttons'
 import Heading from './Heading'
 import NavBar from './NavBar'
-import SideBar from './sideBar'
 import Widget from './Widget'
 
 const DashBoard = () => {
