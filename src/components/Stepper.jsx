@@ -23,7 +23,7 @@ const Stepper = ({steps,currentStep}) => {
       <div className={`rounded-full transition duration-500 ease-in-out border-2 bg-blue-950 h-12 w-12
          flex items-center justify-center py-3 text-white ${Step===currentStep&&" bg-blue-950 text-white font-bold border "}`}>
       {/* Display Number */}
-      {Step<currentStep?(<span className='text-white font-bold text-xl'>&#10003;</span>):(index)} 
+      {Step<currentStep?(<span className='text-white font-bold text-xl'>&#10003;</span>):(Step)} 
       </div>
       {/* Description Div */}
       </div>
