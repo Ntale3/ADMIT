@@ -20,15 +20,18 @@ const filteredData=data.filter(item=>item.name.toLowerCase().includes(searchQuer
 
 const updateCheck = (data) =>{
   if(!isSelected.includes(data)){ 
-  setIsSelected([...isSelected,data]);
-  
-  updateFormData({    
-    selectedschool:[...isSelected,data],  
-  });
+    //console.log('IsSelected:'+isSelected.length);
+    console.log('Data:'+data.name)    
+    setIsSelected([...isSelected,data]);
+    console.log('IsSelected:'+isSelected.name);
+    updateFormData({    
+      selectedschool:[...isSelected,data],  
+    });
+
   }
   else{
     deleteSchool(data)
-    
+    console.log('IsSelected:'+isSelected.length);
   }
  
 
