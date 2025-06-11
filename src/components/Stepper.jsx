@@ -10,7 +10,7 @@ const Stepper = ({steps,currentStep}) => {
 
   //i created a state to keeps track of the steps and o initialised it to the steps by spreading
   const[newStep,setNewStep]=useState([...steps]);
-  console.log(newStep.length)
+  
 
   //so now the newstate variable in the use state is equal to the steps variable i passed from the steps page
   //now i iterate over it using a map 
@@ -23,7 +23,7 @@ const Stepper = ({steps,currentStep}) => {
       <div className={`rounded-full transition duration-500 ease-in-out border-2 bg-blue-950 h-12 w-12
          flex items-center justify-center py-3 text-white ${Step===currentStep&&" bg-blue-950 text-white font-bold border "}`}>
       {/* Display Number */}
-      {Step<currentStep?(<span className='text-white font-bold text-xl'>&#10003;</span>):(index+1)} 
+      {Step<currentStep?(<span className='text-white font-bold text-xl'>&#10003;</span>):(Step)} 
       </div>
       {/* Description Div */}
       </div>

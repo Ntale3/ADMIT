@@ -1,6 +1,5 @@
 import {useState,useEffect,useContext} from 'react'
 import DataContext from './DataContext'
-import FormContext from './FormContext';
 const DataContextProvider = ({children}) => {
   //const{setSelectedSchool}=useContext(FormContext)
   
@@ -25,7 +24,7 @@ const DataContextProvider = ({children}) => {
       setIsSelected([...updateTasks])
       
     }
-console.log(isSelected)
+
     useEffect(()=>{
         const fetchData=async()=>{
             const response=await fetch('api/data')
